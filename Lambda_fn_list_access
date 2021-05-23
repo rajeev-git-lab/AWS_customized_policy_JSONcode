@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:ListProvisionedConcurrencyConfigs",
+                "lambda:ListFunctionEventInvokeConfigs",
+                "lambda:ListFunctionsByCodeSigningConfig",
+                "lambda:ListVersionsByFunction",
+                "lambda:ListAliases"
+            ],
+            "Resource": [
+                "arn:aws:lambda:ap-southeast-1:140624027851:function:myfirstlambdafn",
+                "arn:aws:lambda:ap-southeast-1:140624027851:code-signing-config:FirstRole"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:ListFunctions",
+                "lambda:ListEventSourceMappings",
+                "lambda:ListLayerVersions",
+                "lambda:ListLayers",
+                "lambda:ListCodeSigningConfigs"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
